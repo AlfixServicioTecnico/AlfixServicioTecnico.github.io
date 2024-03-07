@@ -105,23 +105,34 @@ body {
 
 /* Estilos del footer */
 .footer {
-   
     background: linear-gradient(-45deg, #405DE6, #E1306C, #FD7E14, #000080); 
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: #fff;
-    padding: 50px 0;
+    padding: 30px 0; /* Reducido el padding para dispositivos móviles */
     border-top: 2px solid #fffbfe;
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiado a columna en dispositivos móviles */
 }
 
 .contact-info, .business-hours {
-    flex: 0 0 48%;
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    margin-bottom: 20px; /* Separación entre elementos en dispositivos móviles */
+}
+
+/* Media query para dispositivos con un ancho máximo de 768px (tablets y dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 0; /* Ajuste del padding para dispositivos móviles */
+    }
+
+    .contact-info, .business-hours {
+        margin-bottom: 15px; /* Ajuste de la separación entre elementos para dispositivos móviles */
+    }
 }
 
 h3 {
