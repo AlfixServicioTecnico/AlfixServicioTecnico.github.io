@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .hero-title {
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f3efef;
+            animation: revealText 2s steps(20, end) forwards;
+        }
+
+        @keyframes revealText {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Estilo para animar el subtítulo */
+        .hero-description {
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #f8f6f6;
+            animation: revealText 2s steps(20, end) forwards;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Título del servicio técnico con efecto de texto animado -->
+
+<!-- Encabezado -->
+<header class="header">
+    <div class="container">
+       
+        
+        <!-- Título del servicio técnico con efecto de texto animado -->
+        <h1 class="tittle" id="tittle"></h1>
+
+</header>
+
+ <!-- Sección del héroe -->
+ <section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <!-- Texto destacado con efecto de desplazamiento -->
+            <h2 class="hero-title" id="hero-title">Reparación y Mantenimiento de Dispositivos</h2>
+            <!-- Descripción del servicio con animación de entrada -->
+            <p class="hero-description" id="hero-description">Confía en nosotros para mantener tus dispositivos en perfecto estado. Nuestro equipo de expertos está listo para brindarte el mejor servicio.</p>
+        </div>
+        <!-- Botón de llamada a la acción -->
+        <div class="cta-button">
+            <div class="social-media-header">
+                <a href="https://www.facebook.com/alexis.sasia.9/?locale=es_LA" class="social-icon" target="_blank"><img src="images/facebook.png" alt="Facebook" width="50"></a>
+                <a href="https://api.whatsapp.com/send?phone=2342532322" class="social-icon" target="_blank"><img src="images/whatsapp.ico" alt="Twitter" width="50"></a>
+               <a href="https://www.instagram.com/alfix_obrien/" class="social-icon" target="_blank"><img src="images/instagram.ico" alt="Instagram" width="50"></a>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de servicios -->
+<section class="services">
+    <div class="container">
+       <h2 style="margin: 25px;">Nuestros Servicios</h2>
+        <div class="grid-container">
+            <div class="service" id="service-catalog" onclick="openCatalog()">
+                <h3>Celulares a la venta</h3>
+                <ul class="subservices" id="subservices-catalog">
+                    <li>Haz Click aqui para ver Celulares al mejor precio.</li>
+                </ul>
+            </div>
+            <!-- Servicio de reparación de celulares -->
+            <div class="service" id="service-celulares">
+                <h3 onclick="toggleSubservices('celulares')"><i class="fas fa-mobile-alt"></i> Reparación de Celulares</h3>
+                <ul class="subservices" id="subservices-celulares">
+                    <li>Reparación de pantallas rotas</li>
+                    <li>Sustitución de baterías agotadas</li>
+                    <li>Arreglo de cámaras dañadas</li>
+                </ul>
+            </div>
+            <!-- Servicio de reparación de tablets -->
+            <div class="service" id="service-tablets">
+                <h3 onclick="toggleSubservices('tablets')"><i class="fas fa-tablet-alt"></i> Reparación de Tablets</h3>
+                <ul class="subservices" id="subservices-tablets">
+                    <li>Reparación de pantallas táctiles</li>
+                    <li>Reemplazo de baterías defectuosas</li>
+                    <li>Corrección de errores de software</li>
+                </ul>
+            </div>
+
+
+
+            <!-- Servicio de reparación de computadoras -->
+            <div class="service" id="service-pc">
+                <h3 onclick="toggleSubservices('pc')"><i class="fas fa-desktop"></i> Reparación de Computadoras</h3>
+                <ul class="subservices" id="subservices-pc">
+                    <li>Diagnóstico y reparación de hardware</li>
+                    <li>Optimización de rendimiento</li>
+                    <li>Instalación y configuración de software</li>
+                </ul>
+            </div>
+            <!-- Servicio de reparación de consolas de juegos -->
+            <div class="service" id="service-consolas">
+                <h3 onclick="toggleSubservices('consolas')"><i class="fas fa-gamepad"></i> Reparación de Consolas de videojuegos</h3>
+                <ul class="subservices" id="subservices-consolas">
+                    <li>Reparación de fallas de hardware</li>
+                    <li>Limpieza interna y mantenimiento</li>
+                    <li>Actualización del sistema y software</li>
+                </ul>
+            </div>
+            
+            
+            <!-- Servicio de reparación de televisores -->
+            <div class="service" id="service-tv">
+                <h3 onclick="toggleSubservices('tv')"><i class="fas fa-tv"></i> Reparación de Televisores</h3>
+                <ul class="subservices" id="subservices-tv">
+                    <li>Arreglo de problemas de pantalla</li>
+                    <li>Restauración de audio</li>
+                    <li>Instalación de antenas y servicios</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Almirante Brown #220</p>
+                <p>Teléfono: 2342532322</p>
+                <p>Correo electrónico: alfix2022@hotmail.com</p>
+            </div>
+            <!-- Horarios de atención -->
+            <div class="business-hours">
+                <h3>Horario de atención</h3>
+                <ul>
+                    <li><span>Lunes - Viernes:</span> 16:30 PM - 22:30 PM</li>
+                    <li><span>Sábado:</span> Cerrado</li>
+                    <li><span>Domingo:</span> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Derechos de autor -->
+        <div class="copyright">
+            <p>&copy; ALFIX</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Array con las letras del título
+    const letters = ['A', 'L', 'F', 'I', 'X'];
+    // Elemento donde se mostrará el título
+    const titleElement = document.getElementById('tittle');
+    // Función para mostrar el título animado
+    function showAnimatedTitle() {
+        // Recorrer el array de letras
+        letters.forEach((letter, index) => {
+            // Crear un elemento span para cada letra
+            const span = document.createElement('span');
+            span.textContent = letter;
+            // Añadir un retraso creciente a cada letra
+            span.style.animationDelay = `${index * 100}ms`;
+            // Agregar la letra al título
+            titleElement.appendChild(span);
+        });
+    }
+    // Mostrar el título animado cuando se cargue el contenido
+    window.onload = showAnimatedTitle;
+</script>
+
+<script>
+    function openCatalog() {
+        // URL de la página de catálogo relativa al archivo HTML actual
+        var url = "catalog.html";
+        // Opciones para la ventana emergente
+        var windowFeatures = "width=800,height=600,resizable=yes,scrollbars=yes";
+        // Abrir la nueva ventana
+        window.open("/catalog.html", "_self");
+    }
+</script>
+
+</body>
+</html>

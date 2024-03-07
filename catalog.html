@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Celulares</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff0066; /* Agregamos un borde inferior */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .phone {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .phone:hover {
+            transform: translateY(-5px);
+        }
+
+        .phone img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .phone h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .phone p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .phone .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .phone .description {
+            font-size: 0.9rem;
+        }
+        
+        .back-button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px;
+            width: 100px; /* Ancho del botón */
+            height: 100px; /* Altura del botón */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 10px; /* Ajustar según prefieras */
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            line-height: 80px; /* Ajustar según prefieras */
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Catálogo de Celulares</h1>
+        <div class="catalog">
+            <div class="phone">
+                <img src="images/catalog/Samsung galaxy A21S.png" alt="Samsung GalaSxy S21">
+                <h3>Samsung GalaSxy S21</h3>
+                <p class="price">Precio: $999</p>
+                <p class="description">El último modelo de iPhone con pantalla Super Retina XDR y chip A14 Bionic.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/a03core.png" alt="Samsung Galaxy S21">
+                <h3>Samsung A03 CORE</h3>
+                <p class="price">Precio: $799</p>
+                <p class="description">El buque insignia de Samsung con pantalla Dynamic AMOLED 2X y cámara de 108 MP.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/galaxy a4 core.png" alt="OnePlus 9 Pro">
+                <h3>Samsung Galaxy A4 CORE</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/moto g7.png" alt="OnePlus 9 Pro">
+                <h3>Motorola G7</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/moto g9 power.png" alt="OnePlus 9 Pro">
+                <h3>Motorola G9 Power</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/motoe40.png" alt="OnePlus 9 Pro">
+                <h3>Motorola E40</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/Redmi 9c.png" alt="OnePlus 9 Pro">
+                <h3>Xiaomi Redmi 9c</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <div class="phone">
+                <img src="images/catalog/Redmi A.png" alt="OnePlus 9 Pro">
+                <h3>Xiaomi Redmi A</h3>
+                <p class="price">Precio: $899</p>
+                <p class="description">El dispositivo insignia de OnePlus con pantalla Fluid AMOLED 120Hz y carga rápida de 65W.</p>
+            </div>
+            <a href="index.html" class="back-button">Volver</a>
+            <!-- Agrega más celulares según sea necesario -->
+        </div>
+
+
+    </div>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Principal #123</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Correo electrónico: Alfix@gmail.com</p>
+            </div>
+            <!-- Horarios de atención -->
+            <div class="business-hours">
+                <h3>Horario de atención</h3>
+                <ul>
+                    <li><span>Lunes - Viernes:</span> 9:00 AM - 6:00 PM</li>
+                    <li><span>Sábado:</span> 10:00 AM - 4:00 PM</li>
+                    <li><span>Domingo:</span> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Derechos de autor -->
+        <div class="copyright">
+            <p>&copy; ALFIX</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
