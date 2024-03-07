@@ -8,14 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
+
+
+
         .hero-title {
-            overflow: hidden;
-            white-space: nowrap;
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: #f3efef;
-            animation: revealText 2s steps(20, end) forwards;
-        }
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fffbfb;
+    word-wrap: break-word; /* Permite que las palabras se rompan automáticamente */
+    max-width: 100%; /* Limita el ancho máximo del texto */
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (tamaño de pantalla de una tableta o dispositivo móvil en posición horizontal) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 480px (tamaño de pantalla de un dispositivo móvil en posición vertical) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem; /* Cambia el tamaño de fuente para pantallas aún más pequeñas */
+    }
+}
 
         @keyframes revealText {
             from {
@@ -28,18 +46,55 @@
 
         /* Estilo para animar el subtítulo */
         .hero-description {
-            overflow: hidden;
-            white-space: nowrap;
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            color: #f8f6f6;
-            animation: revealText 2s steps(20, end) forwards;
-        }
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #FD7E14; /* Color inicial */
+    animation:  rgbGradient 15s infinite, revealText 1.5s ease forwards;
+    transition: transform 0.3s ease;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero-description {
+        font-size: 1.3rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        margin-bottom: 20px; /* Espacio inferior más pequeño para dispositivos móviles */
+    }
+}
+     
+
+@keyframes rgbGradient {
+    0% {
+        color: #FD7E14; /* Violeta oscuro */
+    }
+    10% {
+        color: #FD7E14; /* Violeta oscuro */
+    }
+    20% {
+        color: #ce275f; /* Violeta más claro */
+    }
+    40% {
+        color: #A05CBE; /* Violeta más claro */
+    }
+    60% {
+        color: #E1306C; /* Rojo oscuro */
+    }
+    80% {
+        color: #fd9d18; /* Rojo más claro */
+    }
+    100% {
+        color: #FD7E14; /* Naranja oscuro */
+    }
+}
+        
     </style>
 
 
 </head>
 <body>
+
+  
 
     <!-- Título del servicio técnico con efecto de texto animado -->
 
@@ -60,13 +115,15 @@
             <!-- Texto destacado con efecto de desplazamiento -->
             <h2 class="hero-title" id="hero-title">Reparación y Mantenimiento de Dispositivos</h2>
             <!-- Descripción del servicio con animación de entrada -->
-            <p class="hero-description" id="hero-description">Confía en nosotros para mantener tus dispositivos en perfecto estado. Nuestro equipo de expertos está listo para brindarte el mejor servicio.</p>
+            <p class="hero-description" id="hero-description"><div class="hero-description">
+                ¿Problemas con tus dispositivos? <br> ¡Nosotros te ayudamos! <br> Reparación rápida y confiable
+            </div>
         </div>
         <!-- Botón de llamada a la acción -->
         <div class="cta-button">
             <div class="social-media-header">
                 <a href="https://www.facebook.com/alexis.sasia.9/?locale=es_LA" class="social-icon" target="_blank"><img src="images/facebook.png" alt="Facebook" width="50"></a>
-                <a href="https://api.whatsapp.com/send?phone=2342532322" class="social-icon" target="_blank"><img src="images/whatsapp.ico" alt="Twitter" width="50"></a>
+                <a href="https://api.whatsapp.com/send?phone=+5492342532322" class="social-icon" target="_blank"><img src="images/whatsapp.ico" alt="Twitter" width="50"></a>
                <a href="https://www.instagram.com/alfix_obrien/" class="social-icon" target="_blank"><img src="images/instagram.ico" alt="Instagram" width="50"></a>
           </div>
         </div>
@@ -76,7 +133,7 @@
 <!-- Sección de servicios -->
 <section class="services">
     <div class="container">
-       <h2 style="margin: 25px;">Nuestros Servicios</h2>
+        <h2 style="margin: 25px auto; text-align: center;">Nuestros Servicios</h2>
         <div class="grid-container">
             <div class="service" id="service-catalog" onclick="openCatalog()">
                 <h3>Celulares a la venta</h3>
@@ -148,7 +205,7 @@
             <div class="contact-info">
                 <h3>Contacto</h3>
                 <p>Dirección: Almirante Brown #220</p>
-                <p>Teléfono: 2342532322</p>
+                    <p>Teléfono: 2342532322</p>
                 <p>Correo electrónico: alfix2022@hotmail.com</p>
             </div>
             <!-- Horarios de atención -->
