@@ -124,16 +124,7 @@ body {
     margin-bottom: 20px; /* Separación entre elementos en dispositivos móviles */
 }
 
-/* Media query para dispositivos con un ancho máximo de 768px (tablets y dispositivos móviles) */
-@media screen and (max-width: 768px) {
-    .footer {
-        padding: 20px 0; /* Ajuste del padding para dispositivos móviles */
-    }
 
-    .contact-info, .business-hours {
-        margin-bottom: 15px; /* Ajuste de la separación entre elementos para dispositivos móviles */
-    }
-}
 
 h3 {
     color: #edeaea;
@@ -155,13 +146,10 @@ span {
 
 .copyright {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0;
     font-size: 14px;
     opacity: 0.8;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
 }
-
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -184,5 +172,16 @@ span {
 /* Efecto de zoom al pasar el cursor sobre los iconos */
 .social-icon:hover {
     transform: scale(1.2); /* Aumenta el tamaño del icono al 120% */
+}
+
+/* Media query para dispositivos con un ancho máximo de 768px (tablets y dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 0; /* Ajuste del padding para dispositivos móviles */
+    }
+
+    .contact-info, .business-hours {
+        margin-bottom: 15px; /* Ajuste de la separación entre elementos para dispositivos móviles */
+    }
 }
 
